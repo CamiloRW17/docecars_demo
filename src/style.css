@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Goldman';
+  src: url(./fonts/Goldman-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url(./fonts/Sansation-Regular.ttf);
+}
+
+/* Configuración Básica */
+body {
+  font-family: 'Sansation';
+}
+
+/* Clase personalizada para la tipografía de marca */
+.brand-font {
+  font-family: 'Goldman';
+}
+
+
+/* Animación de Zoom Lento para el Hero */
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 20s infinite alternate linear;
+}
