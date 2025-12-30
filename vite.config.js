@@ -6,4 +6,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: '/docecars_demo/'
 })
